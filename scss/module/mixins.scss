@@ -1,0 +1,27 @@
+@mixin display ($property) {
+    display:$property;
+}
+@mixin flex ($align-items, $justify-content) {
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+@mixin animation ($property, $time) {
+    transition-property:$property ;
+    transition-duration:$time;
+}
+
+@mixin test ($size){
+    @if $size == 100px {
+        width:$size01;
+        border:$border01;
+    }@else if   $size == 200px{
+        width:$size02;
+        border:$border02;
+    }@else if   $size == 300px{
+        width:$size03;
+        border:$border03;
+    }@else {
+        width:$size04;
+        border:$border04;
+    }
+}

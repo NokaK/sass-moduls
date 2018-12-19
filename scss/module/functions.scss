@@ -1,0 +1,6 @@
+@function fun($number1, $number2) {
+    @return ($number1 + $number2)*3;
+}
+@function width-fun($number1, $number2) {
+    @return ($number1 / $number2)*100%;
+}

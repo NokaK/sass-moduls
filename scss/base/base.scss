@@ -1,0 +1,36 @@
+@import '../module/private.scss';
+@import '../module/variable.scss';
+@import '../module/mixins.scss';
+@import '../module/functions.scss';
+
+header{
+    
+    @extend %padding-30px;
+    .main-container{
+        @extend %container;
+        .text {
+            font-size: fun(10px,80px);
+        }
+    }
+    &:hover {
+       @include animation (all,0.3s); 
+       
+    }
+}
+section {
+    @extend %padding-30px;
+    .main-container{
+        @extend %container;
+        .flex {
+            @include display(flex);
+            @include flex(center,center);
+            .box {
+                width: width-fun(200px,800px);
+                background:$color;
+            }
+        }
+       #inputvalue{
+         @include test(700px);
+       }
+    }
+}
